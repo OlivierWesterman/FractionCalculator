@@ -29,4 +29,37 @@ This App was made by Olivier Westerman while studying at Vives Brugge in Spring 
 ![ManipulatorsTabEmptyWPF](https://github.com/OlivierWesterman/FractionCalculator/assets/145467433/a80971fd-360c-421c-81e4-fa62e719df91)
 ![ManipulatorsTabActionWPF](https://github.com/OlivierWesterman/FractionCalculator/assets/145467433/0e59df37-d673-4b40-9347-3b1ccc67c376)
 
+## Setup
+To set up and use the App effectively, you'll need to make sure you have Microsoft Visual Studio installed and enable or install the xUnit testing module.
+It is also important to make sure you are working in a .NET 6 or higher environment.
+You can find a step-by-step guide for installing these packages here:
+- Visual Studio Community edition by following this [link](https://learn.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2022).
+- xUnit by following this [link](https://xunit.net/docs/getting-started/netfx/visual-studio).
+- .Net by following this [link](https://dotnet.microsoft.com/en-us/download/dotnet-framework).
+
+Once everything is installed, open the project solution named 'FractionsApp.sln'. Then, build the solution to ensure all dependencies are resolved. 
+At the top of your window, select which project you want to run with the dropdown and the click on the play button next to it to run.
+![RunningProgram](https://github.com/OlivierWesterman/FractionCalculator/assets/145467433/74dbbb2b-fbe2-4001-870e-06ce6338deac)
+
+## Unit Tests
+The UnitTestFractions class contains tests for the Fraction class, ensuring methods perform as expected and give correct results in various scenarios.\
+It checks for properties like Numerator and Denominator, ensuring the safeguard for the Denominator works properly.\
+Arithmetic tests cover addition, subtraction, multiplication, and division with various values. \
+Reciprocal and Invert methods are validated, alongside Simplify method for large fractions. \
+Result method is tested for correct floating-point approximation, and ToString method for correct string representation.\
+To run these tests see Chapter Setup above.
+
+## UML diagram
+The following is the UML diagram for the Library as well as the other projects that it connects to.\
+The UML of the Fraction class would only be the blue class.
+![UML diagram](https://github.com/OlivierWesterman/FractionCalculator/assets/145467433/0ee281cc-5494-4e63-a24e-7e36ec2fb8fb)
+
+This [link](https://lucid.app/lucidchart/719c3ac3-6d12-45f4-9c02-9b0dc1dd661d/edit?viewport_loc=-2167%2C-39%2C3216%2C1221%2CHWEp-vi-RSFO&invitationId=inv_b5f2439a-9d1e-47bd-999a-76f4c800788b) also leads to a diagram version that can be zoomed in on but you do need to sign in with a Lucid account for that.
+
+## Future Improvements
+- The layout of the WPF does not exactly conform to what was requested because I wanted to add my own touch to the project.
+- It also could use some more work in terms of user experience since the amount of information on the screen could be overwhelming.
+- I'm also sure there is a more powerful way to code the WPF-application without as much repetition in term of functions, I might have overused the copy-paste buttons.
+- I would have loved to be able to use radial progress bars to create circles like piecharts to resemble each fraction but this was not a standardard tool. Alot of time was 'wasted' on my end to try and make that work but in the end I also like my regular progress bars.
+- In term of functionality there is alot more that could be added. Logaritmic function, exponentials, square roots and the like.
 
